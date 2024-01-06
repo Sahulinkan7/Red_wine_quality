@@ -7,6 +7,7 @@ logging.basicConfig(level=logging.INFO,format="[%(asctime)s] : %(message)s")
 ml_project_name="red_wine_project"
 
 list_of_files=[
+    f"src/__init__.py",
     f"src/{ml_project_name}/__init__.py",
     f"src/{ml_project_name}/components/__init__.py",
     f"src/{ml_project_name}/utils/__init__.py",
@@ -17,9 +18,14 @@ list_of_files=[
     f"src/{ml_project_name}/entity/__init__.py",
     f"src/{ml_project_name}/entity/config_entity.py",
     f"src/{ml_project_name}/constants/__init__.py",
+    f"src/{ml_project_name}/logger.py",
+    f"src/{ml_project_name}/exception.py",    
     f"config/config.yaml",
     "params.yaml",
+    "logger.py",
+    "exception.py",
     "main.py",
+    "schema.yaml",
     "requirements.txt",
     "setup.py",
     "research/trials.ipynb",

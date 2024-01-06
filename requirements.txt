@@ -1,4 +1,8 @@
 pandas
 numpy
 scikit-learn
+notebook
+pyYAML
+matplotlib
+django
 -e .
