@@ -1,0 +1,12 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  dataset_download_URL: https://github.com/Sahulinkan7/dataset_repo/raw/main/winequality-red.zip
+  local_data_file: artifacts/data_ingestion/data.zip
+  raw_data_dir: artifacts/data_ingestion
+
+data_validation:
+  root_dir: artifacts/data_validation
+  raw_data_dir: artifacts/data_ingestion/winequality-red.csv
+  STATUS_FILE: artifacts/data_validation/validation_status.txt

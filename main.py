@@ -1,12 +1,10 @@
-from src.red_wine_project.logger import logging
-from src.red_wine_project.exception import CustomException
-import sys 
+from src.red_wine_project.pipeline.Trainingpipeline import TrainPipeline
 
-def hello():
-    try:
-        c=9/0
-    except Exception as e:
-        logging.info(CustomException(e,sys))
+
+if __name__=='__main__':
+    tr=TrainPipeline()
+    if tr.is_running == False:
+        tr.start_training()
         
-        
-hello()
+    else:
+        print("Pipeline is currently running")
