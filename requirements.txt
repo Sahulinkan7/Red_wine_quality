@@ -4,5 +4,6 @@ scikit-learn
 notebook
 pyYAML
 matplotlib
+imblearn
 django
 -e .
