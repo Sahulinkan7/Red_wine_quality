@@ -90,7 +90,7 @@ class DataTransformation:
                 transformed_test_file_path=self.data_transformation_config.transformed_test_file_path,
                 transformed_object_file_path=self.data_transformation_config.transformed_object_filepath
             )
-            logging.info(f"{data_transformation_artifact}")
+            logging.info(f"data transformation artifact \n {data_transformation_artifact}")
             return data_transformation_artifact
         
         except Exception as e:

@@ -52,6 +52,7 @@ class Datavalidation:
                                                             validated_data=validated_data,
                                                             validated_train_data_filepath=self.data_ingestion_artifact.ingested_train_filepath,
                                                             validated_test_data_filepath=self.data_ingestion_artifact.ingested_test_filepath)
+            logging.info(f"data validation artifact \n {data_validation_artifact}")
             return data_validation_artifact
         except Exception as e:
             logging.info(CustomException(e,sys))

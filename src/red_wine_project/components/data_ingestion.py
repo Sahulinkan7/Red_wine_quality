@@ -73,6 +73,7 @@ class DataIngestion:
                 ingested_test_filepath=self.data_ingestion_config.ingested_test_data_path,
                 extracted_data_filepath=self.data_ingestion_config.extracted_data_path
                 )
+            logging.info(f"data ingestion artifact \n {data_ingestion_artifact}")
             return data_ingestion_artifact
         except Exception as e:
             logging.info(CustomException(e,sys))
